@@ -16,7 +16,7 @@ pka2xml-static: main.cpp
 
 .PHONY: pka2xml-static-docker
 pka2xml-static-docker: main.cpp
-	g++ -o pka2xml main.cpp -I/usr/include /usr/lib/x86_64-linux-gnu/libz.a /usr/lib/x86_64-linux-gnu/libre2.a /usr/lib/x86_64-linux-gnu/libcryptopp.a -lpthread -static -static-libstdc++
+	g++ -o pka2xml main.cpp -I/usr/include /usr/lib/aarch64-linux-gnu/libz.a /usr/lib/aarch64-linux-gnu/libre2.a /usr/lib/aarch64-linux-gnu/libcryptopp.a -lpthread -static -static-libstdc++
 
 .PHONY: pka2xml-dynamic
 pka2xml-dynamic: main.cpp
